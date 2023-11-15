@@ -1,2 +1,3 @@
 # amorpet_official
-Website development for web development class I, final work.
+University web development final work, contains html, css, javascript, bootstrap, php with database. (Still in development) 
+<p>Author: https://github.com/jkakemi</p>

@@ -1,0 +1,621 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #e6e6e6 !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* TOPO */
+
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#cabecalho #titulo, #offcanvasNavbarLabel{
+    font-weight: bold;
+    color: rgb(67, 68, 20);
+    font-size: 2em;
+}
+
+.cor-titulo{
+    color: rgb(255, 248, 216);
+}
+
+.breadcrumb-container{
+    margin: 0 auto;
+    padding-top: 1%;
+}
+
+.breadcrumb-item a{
+    text-decoration: none;
+    color: #3d351d;
+}
+
+.breadcrumb-item a:hover{
+    color: black;
+}
+
+.breadcrumb-item a:active{
+    color: #aa9862;
+}
+
+.breadcrumb-item a:visited{
+    color: #755800;
+}
+
+#barra-de-navegacao ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#barra-de-navegacao ul li {
+    margin: 0 10px;
+}
+
+#barra-de-navegacao ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: brown;
+}
+
+#offcanvasNavbar{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #dbcd87;
+}
+
+.borda-bottom{
+    border-bottom: 0.5px solid #6d5e34;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.fundo-cor{
+    background-color: #dbcd87;
+}
+
+.navbar-nav .nav-link {
+    text-transform: uppercase;
+    color: #6d5e34;
+    padding: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+    text-transform: uppercase;
+    color: rgb(46, 30, 7);
+    background-color:#e6e6e6;
+    padding: 5px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+.borda-superior{
+    margin-top: 5%;
+}
+
+.teste1, .teste2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 5%;
+
+}
+
+.teste1 main h2,
+.teste2 main h2{
+    color: #3d351d;
+    padding: 2% 0;
+    text-align: center;
+    background-color: #d4d4d1;    
+}
+
+.teste2 main h2{
+    background-color: #e2e2e2;
+}
+
+.teste1{
+    background-color: #dadada;
+}
+
+.teste2{
+    background-color: #e6e6e6;
+}
+
+.flutuar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flutuar p{
+    margin-top: 2%;
+    margin-right: 10%;
+    flex: 1;
+}
+.flutuar img{
+    max-width: 35%;
+    height: auto;
+    flex: 1;
+}
+
+.badge-primary, .badge-secondary, .badge-third{
+    background-color: rgb(124, 88, 88);
+}
+
+#carousel-container{
+    margin-top: 4.9%;
+}
+
+/* RODAPÉ */
+
+footer{
+    background-color: #dfdbcc;
+    padding-top: 50px;
+    margin-top: auto;
+    width: 100%;
+}
+
+#rodape-elementos{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#rodape-elementos ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+#rodape-elementos ul li{
+    list-style-type: none;
+}
+
+#rodape-elementos ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 10px;
+    color: #6d5e34;
+}
+
+#rodape-elementos ul li a:hover{
+    color: rgb(46, 30, 7);
+}
+
+#rodape-link-amorpet{
+    text-decoration: none;
+    color: #3d351d;
+}
+
+#rodape-link-amorpet:hover{
+    text-decoration: none;
+    color: #000000;
+}
+
+.borda-rodape{
+    border-top: 1px solid #6d5e34;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 2%;
+}
+
+#organizacao-recursos{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 2%;
+}
+
+.recursos{
+    flex: 1;
+}
+
+.organizacao{
+    flex: 1;
+}
+
+/* FORMULARIO PARA CONTATO */
+
+#container-formulario{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+#form-estilizado .label-nova {
+    display: block;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+#form-estilizado input[type="checkbox"]{
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    transform: scale(1.5);
+}
+
+#form-estilizado input[type="radio"]{
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    transform: scale(1.5);
+}
+
+#form-estilizado input[type="text"], input[type="email"]{
+    width: 100%;
+    padding: 1%;
+    border: none;
+}
+
+fieldset{
+    border: 1px solid rgb(112, 91, 46) !important;
+    padding: 5% !important;
+}
+
+#form-estilizado button{
+    border: none;
+    padding: 2%;
+    background-color: #b6a46e;
+    color: rgb(0, 0, 0);
+}
+
+#form-estilizado button:hover{
+    background-color: #726339;
+    color: rgb(255, 255, 255);
+}
+
+label{
+    font-weight: bolder;
+}
+
+#formulario-adocao fieldset textarea{
+    display: flex;
+    margin: 2% 0;
+    border: none;
+}
+
+#formulario-adocao fieldset select{
+    margin-top: 2%;
+    border: none;
+}
+
+#formulario-adocao input[type="submit"]{
+    border: none;
+    padding: 2%;
+    background-color: #b6a46e;
+    color: rgb(0, 0, 0);
+}
+
+#formulario-adocao input[type="submit"]:hover{
+    background-color: #726339;
+    color: rgb(255, 255, 255);
+}
+
+/* PÁGINA SOBRE NÓS */
+
+.imgeditar{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#imagens{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#equipeimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.equipe-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.equipe-container img{
+    width: 90%;
+    border-radius: 100%;
+    margin-bottom: 2%;
+}
+
+/* CSS COM JQUERY OU JAVASCRIPT */
+
+#dados-preenchidos, #buttons-container{
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#buttons-container #enviar{
+    display: inline;
+} 
+
+#buttons-container form{
+    display: inline;
+}
+
+#buttons-container button{
+    border: none;
+    padding: 1%;
+    background-color: #b6a46e;
+    color: rgb(0, 0, 0);
+}
+
+#buttons-container button:hover{
+    background-color: #726339;
+    color: rgb(255, 255, 255);
+}
+
+.error {
+    color: red;
+  }
+
+/* TODOS OS MEDIA QUERIES SEPARADOS */
+
+@media screen and (max-width: 436px){
+    #carousel-container{
+        margin-top: 25%;
+    }
+
+    #rodape-elementos ul{
+        flex-direction:column;
+    }
+    .flutuar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flutuar p{
+        margin: 0 auto;
+        flex: 1;
+        margin-bottom: 5%;
+    }
+
+    .flutuar img{
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #organizacao-recursos{
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 2%;
+    }
+
+    .borda-superior{
+        margin-top: 20%;
+    } 
+
+    #container-formulario{
+        margin-top: 25%;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (min-width: 436px){
+    #carousel-container{
+        margin-top: 20%;
+    }
+
+    #organizacao-recursos{
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 2%;
+    }
+
+    .borda-superior{
+        margin-top: 20%;
+    }
+}
+
+@media screen and (min-width: 576px){
+    #carousel-container{
+        margin-top: 12%;
+    }
+
+    #cabecalho{
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+
+    #barra-de-navegacao ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    } 
+
+    #organizacao-recursos{
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 2%;
+    }
+
+    .borda-superior{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .flutuar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flutuar p{
+        margin: 0 auto;
+        margin: 2% 0;
+    }
+
+    .flutuar img {
+        max-width: 90%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    #container-formulario{
+        margin-top: 20%;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .flutuar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flutuar p{
+        margin: 0 auto;
+        margin: 2% 0;
+    }
+
+    .flutuar img {
+        max-width: 80%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .borda-superior{
+        margin-top: 15%;
+    }
+
+    #container-formulario{
+        margin-top: 15%;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    #carousel-container{
+        margin-top: 10%;
+    }
+
+    .flutuar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flutuar p {
+        flex: 1;
+        margin: 0 auto;
+        margin-bottom: 3%;
+    }
+
+    .flutuar img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    #container-formulario{
+        margin-top: 12%;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1199px){
+    #carousel-container{
+        margin-top: 15%;
+    }
+
+    .flutuar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flutuar p {
+        flex: 1;
+    }
+
+    .flutuar img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .borda-superior{
+        margin-top: 10%;
+    }
+    
+    #container-formulario{
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #carousel-container{
+        margin-top: 8%;
+    }
+    .flutuar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .flutuar p {
+        flex: 1;
+    }
+
+    .flutuar img {
+        max-width: 30%;
+        height: auto;
+    }
+
+    .borda-superior{
+        margin-top: 7%;
+    }
+
+    #container-formulario{
+        margin-top: 6%;
+        margin-bottom: 5%;
+    }
+}

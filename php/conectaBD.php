@@ -13,7 +13,6 @@
         try {
         // O objeto $pdo será utilizado nas operações com o BD
         $pdo = new PDO("mysql:host=$host; dbname=$dbname; charset=utf8mb4", $username, $password, $options);
-        echo "funcionou caralho";
         return $pdo;
         } catch (Exception $e) {
         exit('Falha na conexão com o MySQL: ' . $e->getMessage());
